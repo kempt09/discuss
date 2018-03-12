@@ -1,0 +1,8 @@
+<h2><%= @topic.title %></h2>
+
+<div class="btn-group">
+    <%= link "Back", to: topic_path(@conn, :index), class: "btn light-blue" %>&nbsp;
+    <%= link "Edit", to: topic_path(@conn, :edit, @topic), class: "btn" %>
+</div>
+
+

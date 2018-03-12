@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col s12">
+        <h2>
+            New Topic
+            <%= link "Back", to: topic_path(@conn, :index), class: 'btn light-blue right' %>
+        </h2>
+    </div>
+</div>
+
+
+<%= render "form.html", changeset: @changeset, action: topic_path(@conn, :create) %>
